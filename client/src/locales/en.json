@@ -1,0 +1,33 @@
+{
+  "app": {
+    "title": "Stock Cloud Community",
+    "tagline": "From Japan to the world"
+  },
+  "nav": {
+    "home": "Home",
+    "feed": "Feed",
+    "profile": "My Page",
+    "settings": "Settings"
+  },
+  "home": {
+    "welcome": "Welcome to Stock Cloud Community",
+    "description": "A space to share insights and feelings about investing, from Japan to the world."
+  },
+  "feed": {
+    "title": "Community Feed",
+    "empty": "No posts yet. Share your first thought about the market.",
+    "hint": "Later, this page will show posts, comments, and reactions from the community."
+  },
+  "profile": {
+    "title": "My Page",
+    "subtitle": "A simple place to start building your investor persona.",
+    "placeholderName": "Guest",
+    "placeholderBio": "You can add your bio, interests, and investing style here in the future."
+  },
+  "settings": {
+    "title": "Settings",
+    "description": "Manage your language and, in the future, notification and theme settings.",
+    "languageSectionTitle": "Language",
+    "languageSectionDescription": "Choose the primary language for the interface."
+  }
+}

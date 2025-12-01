@@ -1,10 +1,18 @@
 import type { ReactNode } from "react";
+import { useLocation, Link } from "react-router-dom";
+import { LanguageSwitcher } from "../common/LanguageSwitcher";
+import { useLanguage } from "../../contexts/LanguageContext";
 
 type MainLayoutProps = {
   children: ReactNode;
 };
 
 export const MainLayout = ({ children }: MainLayoutProps) => {
+  const { language, setLanguage } = useLanguage();
+  const location = useLocation();
+
+  const isActive = (path: string) => location.pathname === path;
+
   return (
     <div className="min-h-screen bg-brand-soft text-brand-primary font-sans">
       <header className="border-b border-gray-200 bg-white/80 backdrop-blur-sm">
@@ -15,17 +23,42 @@ export const MainLayout = ({ children }: MainLayoutProps) => {
               community
             </span>
           </div>
-          <nav className="flex items-center gap-4 text-sm text-gray-600">
-            <a href="/" className="hover:text-brand-primary">
-              Home
-            </a>
-            <a href="/feed" className="hover:text-brand-primary">
-              Feed
-            </a>
-            <a href="/profile" className="hover:text-brand-primary">
-              My Page
-            </a>
-          </nav>
+
+          <div className="flex items-center gap-6">
+            <nav className="flex items-center gap-4 text-sm text-gray-600">
+              <Link
+                to="/"
+                className={
+                  "hover:text-brand-primary " +
+                  (isActive("/") ? "font-semibold text-brand-primary" : "")
+                }
+              >
+                Home
+              </Link>
+              <Link
+                to="/feed"
+                className={
+                  "hover:text-brand-primary " +
+                  (isActive("/feed") ? "font-semibold text-brand-primary" : "")
+                }
+              >
+                Feed
+              </Link>
+              <Link
+                to="/profile"
+                className={
+                  "hover:text-brand-primary " +
+                  (isActive("/profile")
+                    ? "font-semibold text-brand-primary"
+                    : "")
+                }
+              >
+                My Page
+              </Link>
+            </nav>
+
+            <LanguageSwitcher value={language} onChange={setLanguage} />
+          </div>
         </div>
       </header>
 

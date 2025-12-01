@@ -1,0 +1,33 @@
+{
+  "app": {
+    "title": "Stock Cloud コミュニティ",
+    "tagline": "日本から、世界へ"
+  },
+  "nav": {
+    "home": "ホーム",
+    "feed": "フィード",
+    "profile": "マイページ",
+    "settings": "設定"
+  },
+  "home": {
+    "welcome": "Stock Cloud コミュニティへようこそ",
+    "description": "投資に関する気づきや感情を、やわらかくシェアしていく場所です。"
+  },
+  "feed": {
+    "title": "コミュニティフィード",
+    "empty": "まだ投稿はありません。最初のひとことをシェアしてみませんか？",
+    "hint": "今後、このページにはメンバーの投稿やコメント、リアクションが並びます。"
+  },
+  "profile": {
+    "title": "マイページ",
+    "subtitle": "あなたの投資スタイルや雰囲気を少しずつ形にしていく場所です。",
+    "placeholderName": "ゲスト",
+    "placeholderBio": "今後、自己紹介や興味のある銘柄などをここにまとめられます。"
+  },
+  "settings": {
+    "title": "設定",
+    "description": "言語や、今後追加される通知・テーマ設定を管理します。",
+    "languageSectionTitle": "言語",
+    "languageSectionDescription": "インターフェースで使用するメイン言語を選択してください。"
+  }
+}
